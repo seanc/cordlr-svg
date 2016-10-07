@@ -19,7 +19,12 @@
     "node": ">=0.10.0"
   },
   "keywords": [
-    "generategenerator"
+    "cordlr",
+    "cordlr-plugin",
+    "plugin",
+    "svg",
+    "images",
+    "discord"
   ],
   "dependencies": {
     "request": "^2.75.0",
