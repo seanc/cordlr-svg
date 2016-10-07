@@ -1,0 +1,29 @@
+{
+  "name": "cordlr-svg",
+  "description": "Cordlr svg-to-png plugin",
+  "version": "0.1.0",
+  "homepage": "https://github.com/seanc/cordlr-svg",
+  "author": "Sean Wilson (https://imsean.me)",
+  "repository": "seanc/cordlr-svg",
+  "bugs": {
+    "url": "https://github.com/seanc/cordlr-svg/issues"
+  },
+  "license": "MIT",
+  "files": [
+    "index.js",
+    "LICENSE",
+    "README.md"
+  ],
+  "main": "index.js",
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "keywords": [
+    "generategenerator"
+  ],
+  "dependencies": {
+    "request": "^2.75.0",
+    "svg2png": "^4.0.0",
+    "valid-url": "^1.0.9"
+  }
+}
