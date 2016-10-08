@@ -1,7 +1,7 @@
 const svgToPng = require('svg2png');
 const path = require('path');
 const request = require('request');
-const validUrl = require('valid-url').isUri;
+const validUrl = require('valid-url');
 
 function svg(bot, config) {
   config = config[svg.name] || {}
@@ -9,11 +9,7 @@ function svg(bot, config) {
 
   return function run(message, args) {
     if (!args.length) return message.reply('You need to provide at least one url');
-    try {
-      const urls = args.filter(url => validUrl(url));
-    } catch (e) {
-      return console.log(e);
-    }
+    const urls = args.filter(url => validUrl.isUri(url));
 
     if (urls.length > max) {
       return message.reply(`You can only convert ${max} images at a time`);
