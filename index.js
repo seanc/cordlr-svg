@@ -9,7 +9,11 @@ function svg(bot, config) {
 
   return function run(message, args) {
     if (!args.length) return message.reply('You need to provide at least one url');
-    const urls = args.filter(url => validUrl(url));
+    try {
+      const urls = args.filter(url => validUrl(url));
+    } catch (e) {
+      return console.log(e);
+    }
 
     if (urls.length > max) {
       return message.reply(`You can only convert ${max} images at a time`);
