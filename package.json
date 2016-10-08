@@ -1,7 +1,7 @@
 {
   "name": "cordlr-svg",
   "description": "Cordlr svg-to-png plugin",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "homepage": "https://github.com/seanc/cordlr-svg",
   "author": "Sean Wilson (https://imsean.me)",
   "repository": "seanc/cordlr-svg",
