@@ -20,7 +20,10 @@
   },
   "keywords": [
     "cordlr",
+    "cordlr-plugin",
+    "plugin",
     "svg",
+    "images",
     "discord"
   ],
   "dependencies": {
